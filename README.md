@@ -1,36 +1,43 @@
-# VendorSphere - Working Version
-Team Size: 3 | Web-based Vendor & Procurement Management System
+# VendorSphere - Vendor & Procurement Management System
 
-## Files (alag-alag - sab alag language me)
-- index.html  -> Structure only (HTML)
-- style.css   -> Design only (CSS)
-- script.js   -> Logic only (JavaScript)
-- VendorManagementSystem.cpp -> C++ console version (alag project, optional)
+Team Size: 3 | Web-based Vendor Management System
 
-## Kaise Chalaye (Sabse Aasan - 100% Working)
-1. Is ZIP ko Extract karo
-2. VendorSphere-Working folder kholo
-3. index.html par DOUBLE CLICK karo - browser me khul jayega
-4. Koi server / VS Code / internet ki zaroorat NAHI hai
+VendorSphere helps businesses manage vendors, track procurement value,
+rate vendors, and export data — all in the browser, no server needed.
 
-## VS Code me chalana ho to:
-- Folder ko VS Code me kholo
-- index.html par right-click -> Open with Live Server (ya double-click)
+**Live Demo:** Open `index.html` in any browser (or use Live Server in VS Code)
+**Repo:** https://github.com/PankajSaroj650/VendorSphere-Working
 
-## Features
-Add, Edit, Delete, Search, Top Rated filter, Total Value stats, Export CSV, LocalStorage me auto-save (refresh ke baad bhi data rahega)
+## MVP Features (Evaluation 1 - First Cut)
 
-## C++ Version kaise chalaye
+- [x] Add Vendor
+- [x] Edit Vendor
+- [x] Delete Vendor
+- [x] Search Vendors
+- [x] Top Rated Filter
+- [x] Dashboard Stats - Total Vendors, Total Value
+- [x] Export CSV
+- [x] Auto-save with LocalStorage (data stays after refresh)
+
+## Tech Stack
+- HTML - Structure
+- CSS - Design / UI
+- JavaScript - Logic + LocalStorage
+- C++ - Console version (optional, in VendorManagementSystem.cpp)
+
+## How to Run (Web Version - 100% Working)
+
+1. Download / Clone this repo
+2. Open folder `VendorSphere-Working`
+3. Double-click `index.html` - it opens in browser
+4. No server / internet needed
+
+VS Code:
+- Open folder in VS Code
+- Right-click `index.html` -> Open with Live Server
+
+## How to Run (C++ Version)
+
+```bash
 g++ VendorManagementSystem.cpp -o vendor
-./vendor   (Windows: vendor.exe)
-
-## Pehle wali file kyu nahi chali?
-Pehli index.html me artifact ka extra system code mix ho gaya tha. Is wali me sirf tumhara code hai, isliye seedha chalegi.
-
-## GitHub par push karna
-git init
-git add .
-git commit -m "VendorSphere working version"
-git branch -M main
-git remote add origin <tumhara-repo-link>
-git push -u origin main
+./vendor
